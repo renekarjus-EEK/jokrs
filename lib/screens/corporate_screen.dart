@@ -70,7 +70,7 @@ class _HomeState extends State<CorporateScreen> {
               padding: EdgeInsets.symmetric(vertical: 20),
             ),
             Text(
-              'How many Corporate BS words can you use in a meeting?',
+              'Test yourself - how many corporate BS words can you use in a meeting?',
               style: GoogleFonts.comfortaa(
                 textStyle: TextStyle(
                   color: Colors.white,
@@ -114,7 +114,7 @@ class _HomeState extends State<CorporateScreen> {
                 ),
                 Visibility(
                   child: Text(
-                    " - you have achieved the rank of a noob!",
+                    " - you have achieved the rank of noob!",
                     style: GoogleFonts.comfortaa(
                       textStyle: TextStyle(
                         color: Colors.white,
