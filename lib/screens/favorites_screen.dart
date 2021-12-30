@@ -21,8 +21,8 @@ class _HomeState extends State<FavoritesScreen> {
         centerTitle: true,
         title: Image.asset('assets/smaller_jokrs.png'),
         backgroundColor: Colors.black,
-        automaticallyImplyLeading: false,
-        leading:IconButton(
+        automaticallyImplyLeading: false, //disable back button
+        leading:IconButton(               //home button
           icon: Icon(
             Icons.home_outlined,
           ),
@@ -58,6 +58,8 @@ class _HomeState extends State<FavoritesScreen> {
                 Padding(
                   padding: EdgeInsets.symmetric(vertical: 8),
                 ),
+
+                //List view for saved favorites
                 Expanded(
                   child: ListView.builder(
                     itemCount: data.size,
@@ -78,6 +80,8 @@ class _HomeState extends State<FavoritesScreen> {
                               textStyle: TextStyle(color: Colors.white),
                             ),
                           ),
+
+                          //Button with alert dialog for deleting a record in FireStore
                           TextButton(
                             onPressed: () {
                               showDialog<AlertDialog>(
@@ -103,11 +107,6 @@ class _HomeState extends State<FavoritesScreen> {
                                     );
                                   },
                               );
-                              /*FirebaseFirestore.instance
-                                  .collection('favorites')
-                                  .doc(data.docs[index].reference.id)
-                                  .delete();
-                              Navigator.pushNamed(context, '/favorites_screen');*/
                             },
                             child: Text(
                               'Delete',

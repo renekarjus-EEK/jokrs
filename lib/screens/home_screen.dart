@@ -55,6 +55,8 @@ class _HomeState extends State<Home> {
             Expanded(
               child: Row(
                 children: [
+
+                  //Chuck picture and link
                   Expanded(
                     child: Stack(
                       children: <Widget>[
@@ -84,6 +86,8 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ),
+
+                  //Dad picture and link
                   Expanded(
                     child: Stack(
                       children: <Widget>[
@@ -119,6 +123,8 @@ class _HomeState extends State<Home> {
             Expanded(
               child: Row(
                 children: [
+
+                  //Corporate picture and link
                   Expanded(
                     child: Stack(
                       children: <Widget>[
@@ -149,6 +155,8 @@ class _HomeState extends State<Home> {
                       ],
                     ),
                   ),
+
+                  //IT picture and link
                   Expanded(
                     child: Stack(
                       children: <Widget>[
@@ -181,6 +189,8 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
+
+            //Random useless fact section
             Expanded(
               child: Row(
                 children: [

@@ -15,8 +15,6 @@ class _HomeState extends State<ChuckScreen> {
   var jokeToFS = Favorites();
   bool isVisible=true;
 
-  //CollectionReference chuckToFirebase = FirebaseFirestore.instance.collection('favorites');
-
   @override
   void initState() {
     super.initState();
@@ -26,6 +24,8 @@ class _HomeState extends State<ChuckScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
+      //Floating action button for getting new joke
       floatingActionButton: FloatingActionButton(
           backgroundColor: Colors.blue,
           child: Icon(
@@ -58,6 +58,7 @@ class _HomeState extends State<ChuckScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            //Chuck gif
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
@@ -72,6 +73,8 @@ class _HomeState extends State<ChuckScreen> {
               child: Container(
                 child: Row(
                   children: [
+
+                    //A Chuck joke from API
                     Expanded(
                       child: FutureBuilder<Chuck>(
                         future: futureChuck,
@@ -93,7 +96,7 @@ class _HomeState extends State<ChuckScreen> {
                                   padding: EdgeInsets.symmetric(vertical: 8),
                                 ),
                                 
-                                //Add to favorites
+                                //Add to favorites button
                                 Visibility(
                                   visible:isVisible,
                                   child: Align(
@@ -120,6 +123,7 @@ class _HomeState extends State<ChuckScreen> {
                                         });
                                         jokeToFS.sendJokeToFireStore(
                                             'chuck', snapshot.data!.chuckJoke);
+                                        //snackbar for confirming adding to favorites
                                         final snackBar = SnackBar(
                                           content: Text('Added to favorites',
                                               style: GoogleFonts.comfortaa(),
