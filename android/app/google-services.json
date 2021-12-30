@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "962814595743",
+    "project_id": "jokrs-ca35b",
+    "storage_bucket": "jokrs-ca35b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:962814595743:android:6e0d3015f3f9109b2b48aa",
+        "android_client_info": {
+          "package_name": "com.example.jokrs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "962814595743-8fhf9plk6dq3ire7p9t0lav7h7c1m25e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvfU0LH-Dp9yAni5n9CJgDk-BUQNWutws"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "962814595743-8fhf9plk6dq3ire7p9t0lav7h7c1m25e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
